@@ -1,13 +1,13 @@
 Package: base-files
-Version: 1506-r20341-591b7e93d3
+Version: 1507-r0+20343-4e1d1b7df0
 Depends: libc, netifd, jsonfilter, usign, openwrt-keyring, ubi-utils, fstools, fwtool
 License: GPL-2.0
 Section: base
 Architecture: mipsel_24kc
-Installed-Size: 53526
-Filename: base-files_1506-r20341-591b7e93d3_mipsel_24kc.ipk
-Size: 54516
-SHA256sum: 9ff46d510c71638268ce122faf75c5e66fa7b8c3f11cb6bedabf0918f25d6824
+Installed-Size: 53562
+Filename: base-files_1507-r0+20343-4e1d1b7df0_mipsel_24kc.ipk
+Size: 54557
+SHA256sum: 44550a73ade16aa5ebde00eb254b8ad660e19699e346b0141fcac82b055c7bc7
 Description:  This package contains a base filesystem and system scripts for OpenWrt.
 
 Package: dropbear
@@ -151,28 +151,6 @@ Size: 11793
 SHA256sum: a3325bcb2486e1fcf0b626b10eda3597cdbea1dcfe71cb1c3a8616eb60882306
 Description:  Kernel modules for RealTek RTL-8139 PCI Fast Ethernet adapters
 
-Package: kmod-acx-mac80211
-Version: 5.10.221+2014-02-16-b6fc3149-1
-Depends: kernel (=5.10.221-1-76c55ea7faf6ba2bc954afca02eefbba), kmod-mac80211
-Section: kernel
-Architecture: mipsel_24kc
-Installed-Size: 180012
-Filename: kmod-acx-mac80211_5.10.221+2014-02-16-b6fc3149-1_mipsel_24kc.ipk
-Size: 177824
-SHA256sum: 48a5122e70bfb656deb652a4e160d3cc097f2d2b1d6d8e38607509f3b2a9d4b0
-Description:  Driver for acx111 cards (mac80211 version)
-
-Package: kmod-adm8211
-Version: 5.10.221+5.15.162-1-1
-Depends: kernel (=5.10.221-1-76c55ea7faf6ba2bc954afca02eefbba), kmod-mac80211, kmod-eeprom-93cx6
-Section: kernel
-Architecture: mipsel_24kc
-Installed-Size: 13838
-Filename: kmod-adm8211_5.10.221+5.15.162-1-1_mipsel_24kc.ipk
-Size: 14624
-SHA256sum: c9f76d4ced3237b107e7e6db6ab8c383897b5aa9d35721547b8071dc159aeeec
-Description:  ADMTek 8211 support
-
 Package: kmod-alx
 Version: 5.10.221-1
 Depends: kernel (=5.10.221-1-1b9e756eaf092edeea8715428061cbf9), kmod-mdio
@@ -196,17 +174,6 @@ Filename: kmod-aoe_5.10.221-1_mipsel_24kc.ipk
 Size: 25518
 SHA256sum: 7dc78964ae68cc847d68a6645e640b1fe4aaa1037dbaa87ed16015cedad8c086
 Description:  Kernel support for ATA over Ethernet
-
-Package: kmod-ar5523
-Version: 5.10.221+5.15.162-1-1
-Depends: kernel (=5.10.221-1-76c55ea7faf6ba2bc954afca02eefbba), kmod-mac80211, kmod-ath, kmod-usb-core, kmod-input-core
-Section: kernel
-Architecture: mipsel_24kc
-Installed-Size: 12513
-Filename: kmod-ar5523_5.10.221+5.15.162-1-1_mipsel_24kc.ipk
-Size: 13291
-SHA256sum: 0a311e98d3c0edb1d0decedccb1b569f53c66f397f50324e8eb9a890c639a3fa
-Description:  Driver for Atheros AR5523 USB sticks
 
 Package: kmod-arptables
 Version: 5.10.221-1
@@ -354,56 +321,6 @@ Size: 5859
 SHA256sum: d5d5e6880c93a7a96be01a4ab6630c8725c014e32fd288ac9eea47c45b6ae1e1
 Description:  This option enables support for VIA Serial ATA
 
-Package: kmod-ath10k-ct-smallbuffers
-Version: 5.10.221+2022-05-13-f808496f-1
-Depends: kernel (=5.10.221-1-76c55ea7faf6ba2bc954afca02eefbba), kmod-mac80211, kmod-ath, kmod-hwmon-core
-Provides: kmod-ath10k
-License: GPLv2
-Section: kernel
-Architecture: mipsel_24kc
-Installed-Size: 251602
-Filename: kmod-ath10k-ct-smallbuffers_5.10.221+2022-05-13-f808496f-1_mipsel_24kc.ipk
-Size: 250056
-SHA256sum: 12f437790b520f455f85b3a82918636486cee999ed713768dcccc759bc0f63ca
-Description:  ath10k-ct driver optimized for CT ath10k firmware (small buffers for low-RAM devices)
-
-Package: kmod-ath10k-ct
-Version: 5.10.221+2022-05-13-f808496f-1
-Depends: kernel (=5.10.221-1-76c55ea7faf6ba2bc954afca02eefbba), kmod-mac80211, kmod-ath, kmod-hwmon-core
-Provides: kmod-ath10k
-License: GPLv2
-Section: kernel
-Architecture: mipsel_24kc
-Installed-Size: 251558
-Filename: kmod-ath10k-ct_5.10.221+2022-05-13-f808496f-1_mipsel_24kc.ipk
-Size: 249940
-SHA256sum: ded64fe2a90fa5970f79b15164fc456b2bbb5967a2152626505a1d90baeb7c74
-Description:  ath10k-ct driver optimized for CT ath10k firmware
-
-Package: kmod-ath10k-smallbuffers
-Version: 5.10.221+5.15.162-1-1
-Depends: kernel (=5.10.221-1-76c55ea7faf6ba2bc954afca02eefbba), kmod-ath
-Section: kernel
-Architecture: mipsel_24kc
-Installed-Size: 204973
-Filename: kmod-ath10k-smallbuffers_5.10.221+5.15.162-1-1_mipsel_24kc.ipk
-Size: 204483
-SHA256sum: 799078c779b9d54400969ef49a3ae21ecf8db8e6eb2f7ca96909c111ec091878
-Description:  Atheros 802.11ac wireless cards support (small buffers for low-RAM devices)
-
-Package: kmod-ath10k
-Version: 5.10.221+5.15.162-1-1
-Depends: kernel (=5.10.221-1-76c55ea7faf6ba2bc954afca02eefbba), kmod-ath
-Section: kernel
-Architecture: mipsel_24kc
-Installed-Size: 204955
-Filename: kmod-ath10k_5.10.221+5.15.162-1-1_mipsel_24kc.ipk
-Size: 204516
-SHA256sum: 8bc61b84b4249b04212def49a8ac7bdc1ba620811f47d6ea07bcb0fc85b63350
-Description:  This module adds support for wireless adapters based on
- Atheros IEEE 802.11ac family of chipsets. For now only
- PCI is supported.
-
 Package: kmod-ath3k
 Version: 5.10.221-1
 Depends: kernel (=5.10.221-1-1b9e756eaf092edeea8715428061cbf9), kmod-bluetooth, ar3k-firmware
@@ -415,99 +332,6 @@ Filename: kmod-ath3k_5.10.221-1_mipsel_24kc.ipk
 Size: 4389
 SHA256sum: a9fdf30b2c52000c190a7117125eee47cd0aece77ed117d80a539ee88d796831
 Description:  Kernel support for ATH3K Module
-
-Package: kmod-ath5k
-Version: 5.10.221+5.15.162-1-1
-Depends: kernel (=5.10.221-1-76c55ea7faf6ba2bc954afca02eefbba), kmod-ath
-Section: kernel
-Architecture: mipsel_24kc
-Installed-Size: 85626
-Filename: kmod-ath5k_5.10.221+5.15.162-1-1_mipsel_24kc.ipk
-Size: 86045
-SHA256sum: b12c0abc4b79e49bc13f71a7bccc195e0cc19c3e8f0a375a47ce2223c2d04e6e
-Description:  This module adds support for wireless adapters based on
- Atheros 5xxx chipset.
-
-Package: kmod-ath6kl-sdio
-Version: 5.10.221+5.15.162-1-1
-Depends: kernel (=5.10.221-1-76c55ea7faf6ba2bc954afca02eefbba), kmod-mmc, kmod-ath6kl
-Section: kernel
-Architecture: mipsel_24kc
-Installed-Size: 8521
-Filename: kmod-ath6kl-sdio_5.10.221+5.15.162-1-1_mipsel_24kc.ipk
-Size: 9390
-SHA256sum: f634e0fd0566392f4a452805ccc816a210a9c30db95df669dfb0860726d99ebe
-Description:  This module adds support for wireless adapters based on
- Atheros IEEE 802.11n AR6003 and AR6004 family of chipsets.
-
-Package: kmod-ath6kl-usb
-Version: 5.10.221+5.15.162-1-1
-Depends: kernel (=5.10.221-1-76c55ea7faf6ba2bc954afca02eefbba), kmod-usb-core, kmod-ath6kl
-Section: kernel
-Architecture: mipsel_24kc
-Installed-Size: 6373
-Filename: kmod-ath6kl-usb_5.10.221+5.15.162-1-1_mipsel_24kc.ipk
-Size: 7251
-SHA256sum: 5f4d8a5c16842180dedea01a21a77c6003052a59cdabc66c58cecbf752b38945
-Description:  This module adds support for wireless adapters based on the
- Atheros IEEE 802.11n AR6004 chipset.
-
-Package: kmod-ath6kl
-Version: 5.10.221+5.15.162-1-1
-Depends: kernel (=5.10.221-1-76c55ea7faf6ba2bc954afca02eefbba), kmod-ath
-Section: kernel
-Architecture: mipsel_24kc
-Installed-Size: 112141
-Filename: kmod-ath6kl_5.10.221+5.15.162-1-1_mipsel_24kc.ipk
-Size: 112356
-SHA256sum: 8d7a75af7855e0043c7b0b76f25e1194ffb751f6d98725d91bb87213eefc2804
-Description:  Atheros FullMAC wireless devices (common code for ath6kl_sdio and ath6kl_usb)
-
-Package: kmod-ath9k-common
-Version: 5.10.221+5.15.162-1-1
-Depends: kernel (=5.10.221-1-76c55ea7faf6ba2bc954afca02eefbba), kmod-ath
-Section: kernel
-Architecture: mipsel_24kc
-Installed-Size: 129907
-Filename: kmod-ath9k-common_5.10.221+5.15.162-1-1_mipsel_24kc.ipk
-Size: 128065
-SHA256sum: 18394cf91d2b5bd2980a73a787e8f3cfd2e7024bed78d6644b16f032dc41dfe0
-Description:  Atheros 802.11n wireless devices (common code for ath9k and ath9k_htc)
-
-Package: kmod-ath9k-htc
-Version: 5.10.221+5.15.162-1-1
-Depends: kernel (=5.10.221-1-76c55ea7faf6ba2bc954afca02eefbba), kmod-ath9k-common, kmod-usb-core, ath9k-htc-firmware
-Section: kernel
-Architecture: mipsel_24kc
-Installed-Size: 38080
-Filename: kmod-ath9k-htc_5.10.221+5.15.162-1-1_mipsel_24kc.ipk
-Size: 38830
-SHA256sum: 76fcac798b642e23e106d295e2e89b95f0f82a4e0a520102ac9a989d0c37f9ba
-Description:  This module adds support for wireless adapters based on
- Atheros USB AR9271 and AR7010 family of chipsets.
-
-Package: kmod-ath9k
-Version: 5.10.221+5.15.162-1-1
-Depends: kernel (=5.10.221-1-76c55ea7faf6ba2bc954afca02eefbba), kmod-ath9k-common
-Section: kernel
-Architecture: mipsel_24kc
-Installed-Size: 63372
-Filename: kmod-ath9k_5.10.221+5.15.162-1-1_mipsel_24kc.ipk
-Size: 63834
-SHA256sum: fb63a6700e7a17b9a2cef05a6aed9579cbc7fa7438315eeefda7170a3507fecf
-Description:  This module adds support for wireless adapters based on
- Atheros IEEE 802.11n AR5008 and AR9001 family of chipsets.
-
-Package: kmod-ath
-Version: 5.10.221+5.15.162-1-1
-Depends: kernel (=5.10.221-1-76c55ea7faf6ba2bc954afca02eefbba), kmod-mac80211
-Section: kernel
-Architecture: mipsel_24kc
-Installed-Size: 12985
-Filename: kmod-ath_5.10.221+5.15.162-1-1_mipsel_24kc.ipk
-Size: 13674
-SHA256sum: b7189a811e82d1f52bf62eb0d9a28dcaeca23a83e9fc53fab775ed3a270a4981
-Description:  This module contains some common parts needed by Atheros Wireless drivers.
 
 Package: kmod-atl1
 Version: 5.10.221-1
@@ -592,28 +416,6 @@ Filename: kmod-ax25_5.10.221-1_mipsel_24kc.ipk
 Size: 37150
 SHA256sum: c42489d94fe999157045a0b6754fce2ccb765dc4bbb288f811cfb7935464c8b5
 Description:  Kernel modules for AX25 support
-
-Package: kmod-b43
-Version: 5.10.221+5.15.162-1-1
-Depends: kernel (=5.10.221-1-76c55ea7faf6ba2bc954afca02eefbba), kmod-mac80211, kmod-lib-cordic, kmod-ssb, kmod-bcma
-Section: kernel
-Architecture: mipsel_24kc
-Installed-Size: 292100
-Filename: kmod-b43_5.10.221+5.15.162-1-1_mipsel_24kc.ipk
-Size: 287869
-SHA256sum: 253263ab3eb545bcd065ced37d0e25076f0ef357c6d3009bf9c67b1f72fac83a
-Description:  Kernel module for Broadcom 43xx wireless support (mac80211 stack) new
-
-Package: kmod-b43legacy
-Version: 5.10.221+5.15.162-1-1
-Depends: kernel (=5.10.221-1-76c55ea7faf6ba2bc954afca02eefbba), kmod-mac80211, kmod-ssb, b43legacy-firmware
-Section: kernel
-Architecture: mipsel_24kc
-Installed-Size: 53972
-Filename: kmod-b43legacy_5.10.221+5.15.162-1-1_mipsel_24kc.ipk
-Size: 54818
-SHA256sum: d7941ca4def848bfd022ad04134f0df5682d7381960330cae76b6bd4a32d73a8
-Description:  Kernel module for Broadcom 43xx-legacy wireless support (mac80211 stack) new
 
 Package: kmod-b44
 Version: 5.10.221-1
@@ -764,39 +566,6 @@ Size: 1156
 SHA256sum: fd7e44d4f19de57d39253fecf4e14a9e00ceff58da3b3503aaa2427610db5083
 Description:  Bridge netfilter support modules
 
-Package: kmod-brcmfmac
-Version: 5.10.221+5.15.162-1-1
-Depends: kernel (=5.10.221-1-76c55ea7faf6ba2bc954afca02eefbba), kmod-cfg80211, kmod-brcmutil, kmod-usb-core, brcmfmac-firmware-usb
-Section: kernel
-Architecture: mipsel_24kc
-Installed-Size: 116909
-Filename: kmod-brcmfmac_5.10.221+5.15.162-1-1_mipsel_24kc.ipk
-Size: 117357
-SHA256sum: fc43eebbe195ff0454e20a423335b5823c66e658129224380eefe08842ca8ac7
-Description:  Kernel module for Broadcom IEEE802.11n USB Wireless cards
-
-Package: kmod-brcmsmac
-Version: 5.10.221+5.15.162-1-1
-Depends: kernel (=5.10.221-1-76c55ea7faf6ba2bc954afca02eefbba), kmod-mac80211, kmod-bcma, kmod-lib-cordic, kmod-lib-crc8, kmod-brcmutil
-Section: kernel
-Architecture: mipsel_24kc
-Installed-Size: 239074
-Filename: kmod-brcmsmac_5.10.221+5.15.162-1-1_mipsel_24kc.ipk
-Size: 235835
-SHA256sum: 3546b410a0f2b920404900d0c7148848b27dec0630c560a66505b79bd5164011
-Description:  Kernel module for Broadcom IEEE802.11n PCIe Wireless cards
-
-Package: kmod-brcmutil
-Version: 5.10.221+5.15.162-1-1
-Depends: kernel (=5.10.221-1-76c55ea7faf6ba2bc954afca02eefbba)
-Section: kernel
-Architecture: mipsel_24kc
-Installed-Size: 4035
-Filename: kmod-brcmutil_5.10.221+5.15.162-1-1_mipsel_24kc.ipk
-Size: 4832
-SHA256sum: b4fa500dabbc25a2eca80a1c30fcdcef5891336bc1197dd97f8e63dd8732eb83
-Description:  This module contains some common parts needed by Broadcom Wireless drivers brcmsmac and brcmfmac.
-
 Package: kmod-btmrvl
 Version: 5.10.221-1
 Depends: kernel (=5.10.221-1-1b9e756eaf092edeea8715428061cbf9), kmod-mmc, kmod-bluetooth, mwifiex-sdio-firmware
@@ -857,17 +626,6 @@ Filename: kmod-can_5.10.221-1_mipsel_24kc.ipk
 Size: 17999
 SHA256sum: c7ac467ac4603c2ca6f53919002289316417ffc802b106f7d9ebc75a6c58805f
 Description:  Kernel module for CAN bus support.
-
-Package: kmod-carl9170
-Version: 5.10.221+5.15.162-1-1
-Depends: kernel (=5.10.221-1-76c55ea7faf6ba2bc954afca02eefbba), kmod-mac80211, kmod-ath, kmod-usb-core, kmod-input-core, carl9170-firmware
-Section: kernel
-Architecture: mipsel_24kc
-Installed-Size: 51525
-Filename: kmod-carl9170_5.10.221+5.15.162-1-1_mipsel_24kc.ipk
-Size: 52232
-SHA256sum: 0adebdded4209b093144e20c68e661f61bb3a26da6b87cf82bb21a8dc64c5759
-Description:  Driver for Atheros AR9170 USB sticks
 
 Package: kmod-cc2520
 Version: 5.10.221-1
@@ -2397,39 +2155,6 @@ Filename: kmod-gsw150_5.10.221-1_mipsel_24kc.ipk
 Size: 860
 SHA256sum: 61f31392d5283d8041a7479e2ddcba5efd1e80c66e33e607e6c8184ca2a08c01
 Description:  Phy modules for intel gsw150 switch driver.
-
-Package: kmod-hermes-pci
-Version: 5.10.221+5.15.162-1-1
-Depends: kernel (=5.10.221-1-76c55ea7faf6ba2bc954afca02eefbba), kmod-hermes
-Section: kernel
-Architecture: mipsel_24kc
-Installed-Size: 2411
-Filename: kmod-hermes-pci_5.10.221+5.15.162-1-1_mipsel_24kc.ipk
-Size: 3191
-SHA256sum: 9a7aa48e412582fe5c67f1bf15ef0436a84c57ee58a8c7ecd6d69bddbd919814
-Description:  Kernel modules for Intersil Prism 2.5 PCI support
-
-Package: kmod-hermes-plx
-Version: 5.10.221+5.15.162-1-1
-Depends: kernel (=5.10.221-1-76c55ea7faf6ba2bc954afca02eefbba), kmod-hermes
-Section: kernel
-Architecture: mipsel_24kc
-Installed-Size: 2936
-Filename: kmod-hermes-plx_5.10.221+5.15.162-1-1_mipsel_24kc.ipk
-Size: 3724
-SHA256sum: 6176d348e9d5d4aa7f6a97e28634b163ae666f0959f3bf30d7448ac811ba68c4
-Description:  Kernel modules for Hermes in PLX9052 based PCI adaptors
-
-Package: kmod-hermes
-Version: 5.10.221+5.15.162-1-1
-Depends: kernel (=5.10.221-1-76c55ea7faf6ba2bc954afca02eefbba), kmod-cfg80211, kmod-crypto-michael-mic
-Section: kernel
-Architecture: mipsel_24kc
-Installed-Size: 33824
-Filename: kmod-hermes_5.10.221+5.15.162-1-1_mipsel_24kc.ipk
-Size: 34699
-SHA256sum: e7a104377efb8d07148d7fcd77366439dda8c1bd967c04ca4011499a3e7bbb77
-Description:  Kernel support for Hermes 802.11b chipsets
 
 Package: kmod-hfcmulti
 Version: 5.10.221-1
@@ -4585,32 +4310,6 @@ SHA256sum: 36e1908c62558ab63a7f78b1e27a752c4ca36211c470ffb581c0ee724e44cb54
 Description:  A kernel module which allows one to create virtual interfaces that
  map packets to or from specific IP addresses to a particular interface
 
-Package: kmod-ipw2100
-Version: 5.10.221+5.15.162-1-1
-Depends: kernel (=5.10.221-1-76c55ea7faf6ba2bc954afca02eefbba), kmod-libipw
-Section: kernel
-Architecture: mipsel_24kc
-Installed-Size: 280737
-Filename: kmod-ipw2100_5.10.221+5.15.162-1-1_mipsel_24kc.ipk
-Size: 277793
-SHA256sum: c58bc19d32249297e1bea398e22ee673baa87aa7741d56596a8aacd4166a8b39
-Description:  Kernel support for Intel IPW2100
- Includes:
- - ipw2100
-
-Package: kmod-ipw2200
-Version: 5.10.221+5.15.162-1-1
-Depends: kernel (=5.10.221-1-76c55ea7faf6ba2bc954afca02eefbba), kmod-libipw
-Section: kernel
-Architecture: mipsel_24kc
-Installed-Size: 324970
-Filename: kmod-ipw2200_5.10.221+5.15.162-1-1_mipsel_24kc.ipk
-Size: 325273
-SHA256sum: 8c00a1ecbbddaeb414fd56c2e438883b78762c70ec1c6078827997e85233ab6c
-Description:  Kernel support for Intel IPW2200
- Includes:
- - ipw2200
-
 Package: kmod-iscsi-initiator
 Version: 5.10.221-1
 Depends: kernel (=5.10.221-1-1b9e756eaf092edeea8715428061cbf9), kmod-scsi-core, kmod-crypto-hash
@@ -4648,65 +4347,6 @@ Filename: kmod-itco-wdt_5.10.221-1_mipsel_24kc.ipk
 Size: 864
 SHA256sum: fa99045cf1cc80f0f3a91ab3259927c1e6f2a488fada983e52ad35b1e565aef9
 Description:  Kernel module for Intel iTCO Watchdog Timer
-
-Package: kmod-iwl-legacy
-Version: 5.10.221+5.15.162-1-1
-Depends: kernel (=5.10.221-1-76c55ea7faf6ba2bc954afca02eefbba), kmod-mac80211
-Section: kernel
-Architecture: mipsel_24kc
-Installed-Size: 27608
-Filename: kmod-iwl-legacy_5.10.221+5.15.162-1-1_mipsel_24kc.ipk
-Size: 28346
-SHA256sum: bd64fcd11eddcc84d0a8260e67d5fc911b78d1c5e7dbb6c60e9ab9edc412d170
-Description:  iwl-legacy kernel module for legacy Intel wireless support
-
-Package: kmod-iwl3945
-Version: 5.10.221+5.15.162-1-1
-Depends: kernel (=5.10.221-1-76c55ea7faf6ba2bc954afca02eefbba), kmod-mac80211, kmod-iwl-legacy, iwl3945-firmware
-Section: kernel
-Architecture: mipsel_24kc
-Installed-Size: 34113
-Filename: kmod-iwl3945_5.10.221+5.15.162-1-1_mipsel_24kc.ipk
-Size: 34913
-SHA256sum: 98bf2952f41acee34b4c94f6baac0b0a4e41e17c6c884ec879f44b45e15ce08d
-Description:  iwl3945 kernel module for Intel 3945 support
-
-Package: kmod-iwl4965
-Version: 5.10.221+5.15.162-1-1
-Depends: kernel (=5.10.221-1-76c55ea7faf6ba2bc954afca02eefbba), kmod-mac80211, kmod-iwl-legacy, iwl4965-firmware
-Section: kernel
-Architecture: mipsel_24kc
-Installed-Size: 56406
-Filename: kmod-iwl4965_5.10.221+5.15.162-1-1_mipsel_24kc.ipk
-Size: 57141
-SHA256sum: eaf9b0576021a1cbd1a053a6274abd9b045d5667372ccdd7e425298c9246592b
-Description:  iwl4965 kernel module for Intel 4965 support
-
-Package: kmod-iwlwifi
-Version: 5.10.221+5.15.162-1-1
-Depends: kernel (=5.10.221-1-76c55ea7faf6ba2bc954afca02eefbba), kmod-mac80211
-Section: kernel
-Architecture: mipsel_24kc
-Installed-Size: 351344
-Filename: kmod-iwlwifi_5.10.221+5.15.162-1-1_mipsel_24kc.ipk
-Size: 350476
-SHA256sum: 157b247e1a7bc1cf3286fe3453773a09feec1933a9bac010ebd2164b31f4dd85
-Description:  iwlwifi kernel module for
- Intel Wireless WiFi Link 6250AGN Adapter
- Intel 6000 Series Wi-Fi Adapters (6200AGN and 6300AGN)
- Intel WiFi Link 1000BGN
- Intel Wireless WiFi 5150AGN
- Intel Wireless WiFi 5100AGN, 5300AGN, and 5350AGN
- Intel 6005 Series Wi-Fi Adapters
- Intel 6030 Series Wi-Fi Adapters
- Intel Wireless WiFi Link 6150BGN 2 Adapter
- Intel 100 Series Wi-Fi Adapters (100BGN and 130BGN)
- Intel 2000 Series Wi-Fi Adapters
- Intel 7260 Wi-Fi Adapter
- Intel 3160 Wi-Fi Adapter
- Intel 7265 Wi-Fi Adapter
- Intel 8260 Wi-Fi Adapter
- Intel 3165 Wi-Fi Adapter
 
 Package: kmod-ixgbe
 Version: 5.10.221-1
@@ -5118,66 +4758,6 @@ Size: 974
 SHA256sum: ccb35d6968d72b2e3fb5dad40145276d70de1c14881e931d078b26acd6878178
 Description:  Kernel module for ZSTD compression/decompression support
 
-Package: kmod-lib80211
-Version: 5.10.221+5.15.162-1-1
-Depends: kernel (=5.10.221-1-76c55ea7faf6ba2bc954afca02eefbba), kmod-cfg80211, kmod-crypto-hash, kmod-crypto-ccm
-Section: kernel
-Architecture: mipsel_24kc
-Installed-Size: 11082
-Filename: kmod-lib80211_5.10.221+5.15.162-1-1_mipsel_24kc.ipk
-Size: 11941
-SHA256sum: 0d371d19a244523128a559aa9bd2212f6dc9f31a1ca3293bc0a0560a04bbad62
-Description:  Kernel modules for 802.11 Networking stack
- Includes:
- - lib80211
- - lib80211_crypt_wep
- - lib80211_crypt_tkip
- - lib80211_crytp_ccmp
-
-Package: kmod-libertas-sdio
-Version: 5.10.221+5.15.162-1-1
-Depends: kernel (=5.10.221-1-76c55ea7faf6ba2bc954afca02eefbba), kmod-cfg80211, kmod-lib80211, kmod-mmc, libertas-sdio-firmware
-Section: kernel
-Architecture: mipsel_24kc
-Installed-Size: 35134
-Filename: kmod-libertas-sdio_5.10.221+5.15.162-1-1_mipsel_24kc.ipk
-Size: 36022
-SHA256sum: 4ee233328041878dd2b5903a37d6ee5ec613877cc425000cb73c22c1493e15e6
-Description:  Marvell 88W8686 Wireless Driver
-
-Package: kmod-libertas-spi
-Version: 5.10.221+5.15.162-1-1
-Depends: kernel (=5.10.221-1-76c55ea7faf6ba2bc954afca02eefbba), kmod-cfg80211, kmod-lib80211, libertas-spi-firmware
-Section: kernel
-Architecture: mipsel_24kc
-Installed-Size: 34774
-Filename: kmod-libertas-spi_5.10.221+5.15.162-1-1_mipsel_24kc.ipk
-Size: 35634
-SHA256sum: 8c0371cc131834057416f7052288320d62f4a27886f6ac640c5d6c01c625e7d2
-Description:  Marvell 88W8686 SPI Wireless Driver
-
-Package: kmod-libertas-usb
-Version: 5.10.221+5.15.162-1-1
-Depends: kernel (=5.10.221-1-76c55ea7faf6ba2bc954afca02eefbba), kmod-cfg80211, kmod-usb-core, kmod-lib80211, libertas-usb-firmware
-Section: kernel
-Architecture: mipsel_24kc
-Installed-Size: 33389
-Filename: kmod-libertas-usb_5.10.221+5.15.162-1-1_mipsel_24kc.ipk
-Size: 34192
-SHA256sum: 119094abc35afdd5e478c62a7d63982b2e7646df1c3bd1811efa507165f42bfa
-Description:  Marvell 88W8015 Wireless Driver
-
-Package: kmod-libipw
-Version: 5.10.221+5.15.162-1-1
-Depends: kernel (=5.10.221-1-76c55ea7faf6ba2bc954afca02eefbba), kmod-crypto-michael-mic, kmod-crypto-ecb, kmod-lib80211, kmod-cfg80211
-Section: kernel
-Architecture: mipsel_24kc
-Installed-Size: 15586
-Filename: kmod-libipw_5.10.221+5.15.162-1-1_mipsel_24kc.ipk
-Size: 16374
-SHA256sum: 8302e875a3731545a7ac0a0852bee52dd1330c772a2fba517819e14a9648f25a
-Description:  Hardware independent IEEE 802.11 networking stack for ipw2100 and ipw2200.
-
 Package: kmod-libphy
 Version: 5.10.221-1
 Depends: kernel (=5.10.221-1-1b9e756eaf092edeea8715428061cbf9)
@@ -5214,26 +4794,15 @@ Size: 7602
 SHA256sum: d4d1e73896553475331f2d6b7dc6bb6e0d73b6b69004d232e1cd1e8e1ccf5853
 Description:  Parallel port line printer device support
 
-Package: kmod-mac80211-hwsim
-Version: 5.10.221+5.15.162-1-1
-Depends: kernel (=5.10.221-1-76c55ea7faf6ba2bc954afca02eefbba), kmod-mac80211
-Section: kernel
-Architecture: mipsel_24kc
-Installed-Size: 23512
-Filename: kmod-mac80211-hwsim_5.10.221+5.15.162-1-1_mipsel_24kc.ipk
-Size: 24240
-SHA256sum: 1e30c129664dfe44c912a8d7fddf3f1ed8e3ecf0bd8930c9e86b2b19cbbd10d0
-Description:  mac80211 HW simulation device
-
 Package: kmod-mac80211
 Version: 5.10.221+5.15.162-1-1
-Depends: kernel (=5.10.221-1-76c55ea7faf6ba2bc954afca02eefbba), kmod-cfg80211, kmod-crypto-cmac, kmod-crypto-ccm, kmod-crypto-gcm, hostapd-common
+Depends: kernel (=5.10.221-1-c30634015cfe7c28c330164eec131cc8), kmod-cfg80211, kmod-crypto-cmac, kmod-crypto-ccm, kmod-crypto-gcm, hostapd-common
 Section: kernel
 Architecture: mipsel_24kc
-Installed-Size: 286996
+Installed-Size: 287005
 Filename: kmod-mac80211_5.10.221+5.15.162-1-1_mipsel_24kc.ipk
-Size: 286273
-SHA256sum: 9ed3cb26229cc090fafb7bdbe5898278c8b67e6132c1dd1f24baad1dc0d0318d
+Size: 286383
+SHA256sum: d5585a19aad58745e708afce6d9dd21146c9cde615109aaf5b02738856817928
 Description:  Generic IEEE 802.11 Networking Stack (mac80211)
 
 Package: kmod-mac802154
@@ -5518,48 +5087,15 @@ Size: 7133
 SHA256sum: 9cfdeb758cb511c47222feb578dab72767a38b85da0b7c04aa49bca2a8b916be
 Description:  MRF24J40 transceiver driver
 
-Package: kmod-mt7601u
-Version: 5.10.221+5.15.162-1-1
-Depends: kernel (=5.10.221-1-76c55ea7faf6ba2bc954afca02eefbba), kmod-mac80211, kmod-usb-core, mt7601u-firmware
-Section: kernel
-Architecture: mipsel_24kc
-Installed-Size: 31904
-Filename: kmod-mt7601u_5.10.221+5.15.162-1-1_mipsel_24kc.ipk
-Size: 32685
-SHA256sum: cc3f88ec0e7e8c9994007791760bea10be8d214e651c1d9499e5a244400baa61
-Description:  MT7601U-based USB dongles Wireless Driver
-
 Package: kmod-mt7603e
 Version: 5.10.221+4.1.2.0-1
 Depends: kernel (=5.10.221-1-1b9e756eaf092edeea8715428061cbf9)
 Section: kernel
 Architecture: mipsel_24kc
-Installed-Size: 899692
+Installed-Size: 890396
 Filename: kmod-mt7603e_5.10.221+4.1.2.0-1_mipsel_24kc.ipk
-Size: 892359
-SHA256sum: dff720edbe2c96ab65806730121644a1b5a2f809062a26c1479c68d2c4b7ef77
-Description:  MTK wifi AP driver
-
-Package: kmod-mt7615d
-Version: 5.10.221+5.0.4.0-1
-Depends: kernel (=5.10.221-1-76c55ea7faf6ba2bc954afca02eefbba), kmod-ramips_hnat
-Section: kernel
-Architecture: mipsel_24kc
-Installed-Size: 2046294
-Filename: kmod-mt7615d_5.10.221+5.0.4.0-1_mipsel_24kc.ipk
-Size: 2031483
-SHA256sum: cc2cb54a8b2dea86674d544388b2709e0810a92d096f85e28d8a499baf4b7d88
-Description:  MTK wifi AP driver
-
-Package: kmod-mt7615d_dbdc
-Version: 5.10.221+5.0.4.0-1
-Depends: kernel (=5.10.221-1-76c55ea7faf6ba2bc954afca02eefbba), kmod-mt7615d, maccalc
-Section: kernel
-Architecture: mipsel_24kc
-Installed-Size: 8487
-Filename: kmod-mt7615d_dbdc_5.10.221+5.0.4.0-1_mipsel_24kc.ipk
-Size: 9250
-SHA256sum: 8771229b5b9907c24614aa1c1eaf94687c8cef274e1c51bd1b9de3523c885772
+Size: 883407
+SHA256sum: 124069a7c9a3b3560e136ebb525bb02a3d4053fc770dada347ffce6d5b8486e6
 Description:  MTK wifi AP driver
 
 Package: kmod-mt76x2e
@@ -5633,39 +5169,6 @@ Size: 4348
 SHA256sum: 7fd9c2c36a6b196369cc5434f603c8d7201bc1fa8b844575d7a0731bcbeb956f
 Description:  Kernel module for multiplexer support
 
-Package: kmod-mwifiex-pcie
-Version: 5.10.221+5.15.162-1-1
-Depends: kernel (=5.10.221-1-76c55ea7faf6ba2bc954afca02eefbba), kmod-mac80211, mwifiex-pcie-firmware
-Section: kernel
-Architecture: mipsel_24kc
-Installed-Size: 159235
-Filename: kmod-mwifiex-pcie_5.10.221+5.15.162-1-1_mipsel_24kc.ipk
-Size: 158541
-SHA256sum: c282e8927fd049a3958e1e3d5a27fe126bde63f87a20cda9635ee37d2bf69989
-Description:  Kernel modules for Marvell 802.11n/802.11ac PCIe Wireless cards
-
-Package: kmod-mwifiex-sdio
-Version: 5.10.221+5.15.162-1-1
-Depends: kernel (=5.10.221-1-76c55ea7faf6ba2bc954afca02eefbba), kmod-mmc, kmod-mac80211, mwifiex-sdio-firmware
-Section: kernel
-Architecture: mipsel_24kc
-Installed-Size: 157563
-Filename: kmod-mwifiex-sdio_5.10.221+5.15.162-1-1_mipsel_24kc.ipk
-Size: 156841
-SHA256sum: 3ac6f6d91349e2927587a42436e7183c1083158541a014873c44005f95c50c46
-Description:  Kernel modules for Marvell 802.11n/802.11ac SDIO Wireless cards
-
-Package: kmod-mwl8k
-Version: 5.10.221+5.15.162-1-1
-Depends: kernel (=5.10.221-1-76c55ea7faf6ba2bc954afca02eefbba), kmod-mac80211, mwl8k-firmware
-Section: kernel
-Architecture: mipsel_24kc
-Installed-Size: 27044
-Filename: kmod-mwl8k_5.10.221+5.15.162-1-1_mipsel_24kc.ipk
-Size: 27798
-SHA256sum: 9cf09526f225af37be5b387b783855620442b246456e2f4ce48bb5d856e85afb
-Description:  Kernel modules for Marvell TOPDOG 802.11 Wireless cards
-
 Package: kmod-nat46
 Version: 5.10.221+2021-11-24-d9bc161f-1
 Depends: kernel (=5.10.221-1-1b9e756eaf092edeea8715428061cbf9)
@@ -5714,18 +5217,6 @@ Filename: kmod-ne2k-pci_5.10.221-1_mipsel_24kc.ipk
 Size: 11258
 SHA256sum: 5ec518e8f85e9e0f6ff43327baf67ce4154b4322f9392681fbf674cb04b17f9c
 Description:  Kernel modules for NE2000 PCI Ethernet Adapter kernel
-
-Package: kmod-net-prism54
-Version: 5.10.221-1
-Depends: kernel (=5.10.221-1-76c55ea7faf6ba2bc954afca02eefbba), prism54-firmware
-License: GPL-2.0
-Section: kernel
-Architecture: mipsel_24kc
-Installed-Size: 105
-Filename: kmod-net-prism54_5.10.221-1_mipsel_24kc.ipk
-Size: 871
-SHA256sum: 85461e323326ef30777ba3915af3fd48d6101dbad426e92e84b150eac937716e
-Description:  Kernel modules for Intersil Prism54 support
 
 Package: kmod-netatop
 Version: 5.10.221+3.1-1
@@ -6576,55 +6067,6 @@ SHA256sum: 97541d947e975884ae64bc1ea5adf6993869aa6699ce8e044bd11139ae9670af
 Description:  This module enhances the performance of the OpenVPN userspace software
  by offloading the data channel processing to kernelspace.
 
-Package: kmod-owl-loader
-Version: 5.10.221+5.15.162-1-1
-Depends: kernel (=5.10.221-1-76c55ea7faf6ba2bc954afca02eefbba), kmod-ath9k
-Section: kernel
-Architecture: mipsel_24kc
-Installed-Size: 2784
-Filename: kmod-owl-loader_5.10.221+5.15.162-1-1_mipsel_24kc.ipk
-Size: 3710
-SHA256sum: c4dbf2689f422202a12ef62b394073b5f9dd13c5a37db0aa127a5b450138cc60
-Description:  Kernel module that helps to initialize certain Qualcomm
- Atheros' PCI(e) Wifi chips, which have the init data
- (which contains the PCI device ID for example) stored
- together with the calibration data in the file system.
- 
- This is necessary for devices like the Cisco Meraki Z1.
-
-Package: kmod-p54-common
-Version: 5.10.221+5.15.162-1-1
-Depends: kernel (=5.10.221-1-76c55ea7faf6ba2bc954afca02eefbba), kmod-mac80211, kmod-lib-crc-ccitt
-Section: kernel
-Architecture: mipsel_24kc
-Installed-Size: 20509
-Filename: kmod-p54-common_5.10.221+5.15.162-1-1_mipsel_24kc.ipk
-Size: 21273
-SHA256sum: cbed522d23045bad4a7ac24c50a23dd164ac59aa4325cccd7755059c1fba03b0
-Description:  Prism54 Drivers (COMMON)
-
-Package: kmod-p54-pci
-Version: 5.10.221+5.15.162-1-1
-Depends: kernel (=5.10.221-1-76c55ea7faf6ba2bc954afca02eefbba), kmod-p54-common, p54-pci-firmware
-Section: kernel
-Architecture: mipsel_24kc
-Installed-Size: 5879
-Filename: kmod-p54-pci_5.10.221+5.15.162-1-1_mipsel_24kc.ipk
-Size: 6674
-SHA256sum: d998ef6b5d1b36185abfede65f6f16a65857b6ed031fd5ba99f5964780424870
-Description:  Prism54 Drivers (PCI)
-
-Package: kmod-p54-usb
-Version: 5.10.221+5.15.162-1-1
-Depends: kernel (=5.10.221-1-76c55ea7faf6ba2bc954afca02eefbba), kmod-usb-core, kmod-p54-common, p54-usb-firmware
-Section: kernel
-Architecture: mipsel_24kc
-Installed-Size: 7335
-Filename: kmod-p54-usb_5.10.221+5.15.162-1-1_mipsel_24kc.ipk
-Size: 8147
-SHA256sum: 60d323a299edf47cae7b472da7cf3c7017960fb4d4c13f2431edb3aa405c5e7b
-Description:  Prism54 Drivers (USB)
-
 Package: kmod-parport-pc
 Version: 5.10.221-1
 Depends: kernel (=5.10.221-1-1b9e756eaf092edeea8715428061cbf9), kmod-ppdev
@@ -7110,182 +6552,6 @@ Size: 2158
 SHA256sum: 6001594882161fec6ddee7ef57a2f57e017106eb541ae76329634b0740140567
 Description:  SPI register map support
 
-Package: kmod-rsi91x-sdio
-Version: 5.10.221+5.15.162-1-1
-Depends: kernel (=5.10.221-1-76c55ea7faf6ba2bc954afca02eefbba), kmod-mac80211, kmod-mmc, kmod-rsi91x, rs9113-firmware
-Section: kernel
-Architecture: mipsel_24kc
-Installed-Size: 10316
-Filename: kmod-rsi91x-sdio_5.10.221+5.15.162-1-1_mipsel_24kc.ipk
-Size: 11133
-SHA256sum: ad7f1af90d06c8a25dd7df33a83d8985b25323bfe368fb5a5e35a4e5b0ffc606
-Description:  Redpine Signals SDIO bus support
-
-Package: kmod-rsi91x-usb
-Version: 5.10.221+5.15.162-1-1
-Depends: kernel (=5.10.221-1-76c55ea7faf6ba2bc954afca02eefbba), kmod-usb-core, kmod-mac80211, kmod-rsi91x, rs9113-firmware
-Section: kernel
-Architecture: mipsel_24kc
-Installed-Size: 6563
-Filename: kmod-rsi91x-usb_5.10.221+5.15.162-1-1_mipsel_24kc.ipk
-Size: 7393
-SHA256sum: 783488da543412481b8441ea8b096deb0445b2d7d6563a4d5c3a412f9dd030e5
-Description:  Redpine Signals USB bus support
-
-Package: kmod-rsi91x
-Version: 5.10.221+5.15.162-1-1
-Depends: kernel (=5.10.221-1-76c55ea7faf6ba2bc954afca02eefbba), kmod-mac80211, rs9113-firmware
-Section: kernel
-Architecture: mipsel_24kc
-Installed-Size: 33755
-Filename: kmod-rsi91x_5.10.221+5.15.162-1-1_mipsel_24kc.ipk
-Size: 34508
-SHA256sum: 5046b185a3489655922379141006acd2b90ddc9013f66f59ef38406d4b2bdb03
-Description:  Redpine Signals Inc 91x WLAN driver support
-
-Package: kmod-rt2400-pci
-Version: 5.10.221+5.15.162-1-1
-Depends: kernel (=5.10.221-1-76c55ea7faf6ba2bc954afca02eefbba), kmod-rt2x00-pci, kmod-eeprom-93cx6
-Section: kernel
-Architecture: mipsel_24kc
-Installed-Size: 7598
-Filename: kmod-rt2400-pci_5.10.221+5.15.162-1-1_mipsel_24kc.ipk
-Size: 8422
-SHA256sum: c58136c5065a2f682db0fc21f539e6a02643092b95f032e280adb8a0ca44d226
-Description:  Ralink Drivers for RT2x00 cards (RT2400 PCI)
-
-Package: kmod-rt2500-pci
-Version: 5.10.221+5.15.162-1-1
-Depends: kernel (=5.10.221-1-76c55ea7faf6ba2bc954afca02eefbba), kmod-rt2x00-pci, kmod-eeprom-93cx6
-Section: kernel
-Architecture: mipsel_24kc
-Installed-Size: 8669
-Filename: kmod-rt2500-pci_5.10.221+5.15.162-1-1_mipsel_24kc.ipk
-Size: 9449
-SHA256sum: d60115110a1a4b7f079a197d59a9b5483c6c4ab25f6cb34c29bdbbb23a5fb237
-Description:  Ralink Drivers for RT2x00 cards (RT2500 PCI)
-
-Package: kmod-rt2500-usb
-Version: 5.10.221+5.15.162-1-1
-Depends: kernel (=5.10.221-1-76c55ea7faf6ba2bc954afca02eefbba), kmod-rt2x00-usb
-Section: kernel
-Architecture: mipsel_24kc
-Installed-Size: 9129
-Filename: kmod-rt2500-usb_5.10.221+5.15.162-1-1_mipsel_24kc.ipk
-Size: 9943
-SHA256sum: 2c6a1a3724af152c8bf3d281088f4251ae45a29fe4b7009fde7575caa860a2bc
-Description:  Ralink Drivers for RT2x00 cards (RT2500 USB)
-
-Package: kmod-rt2800-lib
-Version: 5.10.221+5.15.162-1-1
-Depends: kernel (=5.10.221-1-76c55ea7faf6ba2bc954afca02eefbba), kmod-rt2x00-lib, kmod-lib-crc-ccitt
-Section: kernel
-Architecture: mipsel_24kc
-Installed-Size: 55240
-Filename: kmod-rt2800-lib_5.10.221+5.15.162-1-1_mipsel_24kc.ipk
-Size: 54689
-SHA256sum: 10437f3ad97a68b4d30e9b101c27a0a69808f8cc0b29e8416aaf357c22f9b741
-Description:  Ralink Drivers for RT2x00 cards (rt2800 LIB)
-
-Package: kmod-rt2800-mmio
-Version: 5.10.221+5.15.162-1-1
-Depends: kernel (=5.10.221-1-76c55ea7faf6ba2bc954afca02eefbba), kmod-rt2800-lib, kmod-rt2x00-mmio
-Section: kernel
-Architecture: mipsel_24kc
-Installed-Size: 4476
-Filename: kmod-rt2800-mmio_5.10.221+5.15.162-1-1_mipsel_24kc.ipk
-Size: 5261
-SHA256sum: 25a56b755bd8c5a584510e0399376680ac2e9460a3fb7ae7834cc89e022091db
-Description:  Ralink Drivers for RT2x00 cards (RT28xx/RT3xxx MMIO)
-
-Package: kmod-rt2800-pci
-Version: 5.10.221+5.15.162-1-1
-Depends: kernel (=5.10.221-1-76c55ea7faf6ba2bc954afca02eefbba), kmod-rt2x00-pci, kmod-rt2800-lib, kmod-rt2800-mmio, kmod-eeprom-93cx6, rt2800-pci-firmware
-Section: kernel
-Architecture: mipsel_24kc
-Installed-Size: 3708
-Filename: kmod-rt2800-pci_5.10.221+5.15.162-1-1_mipsel_24kc.ipk
-Size: 4543
-SHA256sum: 12da16abed6776ad75d73f379a11218d64ac79bdaf43b18127c7ecdc04db9f52
-Description:  Ralink Drivers for RT2x00 cards (RT2860 PCI)
-
-Package: kmod-rt2800-usb
-Version: 5.10.221+5.15.162-1-1
-Depends: kernel (=5.10.221-1-76c55ea7faf6ba2bc954afca02eefbba), kmod-rt2x00-usb, kmod-rt2800-lib, kmod-lib-crc-ccitt, rt2800-usb-firmware
-Section: kernel
-Architecture: mipsel_24kc
-Installed-Size: 6779
-Filename: kmod-rt2800-usb_5.10.221+5.15.162-1-1_mipsel_24kc.ipk
-Size: 7631
-SHA256sum: d44b3b0da743861e189b6a1bfa1a04a59c4d4acec29f9b6969d20567d8d1c399
-Description:  Ralink Drivers for RT2x00 cards (RT2870 USB)
-
-Package: kmod-rt2x00-lib
-Version: 5.10.221+5.15.162-1-1
-Depends: kernel (=5.10.221-1-76c55ea7faf6ba2bc954afca02eefbba), kmod-mac80211
-Section: kernel
-Architecture: mipsel_24kc
-Installed-Size: 24435
-Filename: kmod-rt2x00-lib_5.10.221+5.15.162-1-1_mipsel_24kc.ipk
-Size: 25178
-SHA256sum: ec477dfee31d4677a4d9beb1e17e567ae506db7bca10368611c133bcfe16515a
-Description:  Ralink Drivers for RT2x00 cards (LIB)
-
-Package: kmod-rt2x00-mmio
-Version: 5.10.221+5.15.162-1-1
-Depends: kernel (=5.10.221-1-76c55ea7faf6ba2bc954afca02eefbba), kmod-rt2x00-lib
-Section: kernel
-Architecture: mipsel_24kc
-Installed-Size: 2059
-Filename: kmod-rt2x00-mmio_5.10.221+5.15.162-1-1_mipsel_24kc.ipk
-Size: 2871
-SHA256sum: 16bb662c0536f85dceecdfa9e7ef4de21b368e1ccdb834619f5285a5e6d1f84d
-Description:  Ralink Drivers for RT2x00 cards (MMIO)
-
-Package: kmod-rt2x00-pci
-Version: 5.10.221+5.15.162-1-1
-Depends: kernel (=5.10.221-1-76c55ea7faf6ba2bc954afca02eefbba), kmod-rt2x00-mmio, kmod-rt2x00-lib
-Section: kernel
-Architecture: mipsel_24kc
-Installed-Size: 1839
-Filename: kmod-rt2x00-pci_5.10.221+5.15.162-1-1_mipsel_24kc.ipk
-Size: 2654
-SHA256sum: 2ba397287041fbdedb31db25ecbf66911049431f08ba29693e3452c8618e0c47
-Description:  Ralink Drivers for RT2x00 cards (PCI)
-
-Package: kmod-rt2x00-usb
-Version: 5.10.221+5.15.162-1-1
-Depends: kernel (=5.10.221-1-76c55ea7faf6ba2bc954afca02eefbba), kmod-rt2x00-lib, kmod-usb-core
-Section: kernel
-Architecture: mipsel_24kc
-Installed-Size: 6535
-Filename: kmod-rt2x00-usb_5.10.221+5.15.162-1-1_mipsel_24kc.ipk
-Size: 7373
-SHA256sum: d52f8846b9179f9de716b85b0b672c74b3966763683cbe4ecc094d4f00850622
-Description:  Ralink Drivers for RT2x00 cards (USB)
-
-Package: kmod-rt61-pci
-Version: 5.10.221+5.15.162-1-1
-Depends: kernel (=5.10.221-1-76c55ea7faf6ba2bc954afca02eefbba), kmod-rt2x00-pci, kmod-eeprom-93cx6, kmod-lib-crc-itu-t, rt61-pci-firmware
-Section: kernel
-Architecture: mipsel_24kc
-Installed-Size: 12360
-Filename: kmod-rt61-pci_5.10.221+5.15.162-1-1_mipsel_24kc.ipk
-Size: 13171
-SHA256sum: 8ad017513bf664a0f9b910c3370f80cc02adbf27b42facb2a4a0af2c0a376f06
-Description:  Ralink Drivers for RT2x00 cards (RT2x61 PCI)
-
-Package: kmod-rt73-usb
-Version: 5.10.221+5.15.162-1-1
-Depends: kernel (=5.10.221-1-76c55ea7faf6ba2bc954afca02eefbba), kmod-rt2x00-usb, kmod-lib-crc-itu-t, rt73-usb-firmware
-Section: kernel
-Architecture: mipsel_24kc
-Installed-Size: 11865
-Filename: kmod-rt73-usb_5.10.221+5.15.162-1-1_mipsel_24kc.ipk
-Size: 12678
-SHA256sum: 67daed107333ba3d7ac4753b98fd116234bbba732dfb63e47b8e22e10a960d68
-Description:  Ralink Drivers for RT2x00 cards (RT73 USB)
-
 Package: kmod-rtc-ds1307
 Version: 5.10.221-1
 Depends: kernel (=5.10.221-1-1b9e756eaf092edeea8715428061cbf9), kmod-i2c-core, kmod-regmap-i2c, kmod-hwmon-core
@@ -7419,206 +6685,6 @@ Filename: kmod-rtc-s35390a_5.10.221-1_mipsel_24kc.ipk
 Size: 4094
 SHA256sum: 2e5dfee92fbf387dea3d98027aa19df7422337d02764009a5f14d080208a672b
 Description:  Kernel module for Seiko Instruments S-35390A I2C RTC chip
-
-Package: kmod-rtl8180
-Version: 5.10.221+5.15.162-1-1
-Depends: kernel (=5.10.221-1-76c55ea7faf6ba2bc954afca02eefbba), kmod-eeprom-93cx6, kmod-mac80211
-Section: kernel
-Architecture: mipsel_24kc
-Installed-Size: 21017
-Filename: kmod-rtl8180_5.10.221+5.15.162-1-1_mipsel_24kc.ipk
-Size: 21732
-SHA256sum: 347493d31a76278ede9d425ff33dc0b06bf99e0ebbc16e332264a1c9f6541ae3
-Description:  Realtek Drivers for RTL818x devices (RTL8180 PCI)
-
-Package: kmod-rtl8187
-Version: 5.10.221+5.15.162-1-1
-Depends: kernel (=5.10.221-1-76c55ea7faf6ba2bc954afca02eefbba), kmod-eeprom-93cx6, kmod-mac80211, kmod-usb-core
-Section: kernel
-Architecture: mipsel_24kc
-Installed-Size: 18497
-Filename: kmod-rtl8187_5.10.221+5.15.162-1-1_mipsel_24kc.ipk
-Size: 19249
-SHA256sum: bf2a6d4ebe2588ffa3c42c0d74bda7ba122e547e491bc214ecfef577d5ae7dfc
-Description:  Realtek Drivers for RTL818x devices (RTL8187 USB)
-
-Package: kmod-rtl8192c-common
-Version: 5.10.221+5.15.162-1-1
-Depends: kernel (=5.10.221-1-76c55ea7faf6ba2bc954afca02eefbba), kmod-rtlwifi
-Section: kernel
-Architecture: mipsel_24kc
-Installed-Size: 19416
-Filename: kmod-rtl8192c-common_5.10.221+5.15.162-1-1_mipsel_24kc.ipk
-Size: 20187
-SHA256sum: 6787a4f6ca391144f3e4dca97db498bbdb2157500f00f844ee29432667977953
-Description:  Realtek RTL8192CE/RTL8192CU common support module
-
-Package: kmod-rtl8192ce
-Version: 5.10.221+5.15.162-1-1
-Depends: kernel (=5.10.221-1-76c55ea7faf6ba2bc954afca02eefbba), kmod-rtlwifi-pci, kmod-rtl8192c-common, rtl8192ce-firmware
-Section: kernel
-Architecture: mipsel_24kc
-Installed-Size: 25085
-Filename: kmod-rtl8192ce_5.10.221+5.15.162-1-1_mipsel_24kc.ipk
-Size: 25838
-SHA256sum: 5aa2e5340e39893e80d22cf4a9be3fc2c722d0cb25ea0943d161590980d9b9a7
-Description:  Realtek RTL8192CE/RTL8188CE support
-
-Package: kmod-rtl8192cu
-Version: 5.10.221+5.15.162-1-1
-Depends: kernel (=5.10.221-1-76c55ea7faf6ba2bc954afca02eefbba), kmod-rtlwifi-usb, kmod-rtl8192c-common, rtl8192cu-firmware
-Section: kernel
-Architecture: mipsel_24kc
-Installed-Size: 27052
-Filename: kmod-rtl8192cu_5.10.221+5.15.162-1-1_mipsel_24kc.ipk
-Size: 27855
-SHA256sum: 8b1d5fd1d01743490ecc84edbdd25595960ccbd3b66a67cc17bba876126b3d42
-Description:  Realtek RTL8192CU/RTL8188CU support
-
-Package: kmod-rtl8192de
-Version: 5.10.221+5.15.162-1-1
-Depends: kernel (=5.10.221-1-76c55ea7faf6ba2bc954afca02eefbba), kmod-rtlwifi-pci, rtl8192de-firmware
-Section: kernel
-Architecture: mipsel_24kc
-Installed-Size: 48563
-Filename: kmod-rtl8192de_5.10.221+5.15.162-1-1_mipsel_24kc.ipk
-Size: 49339
-SHA256sum: fe7bd1bee862a2c708f21fa35c37b7de5d31f54e3bb40f15435165bc2002900a
-Description:  Realtek RTL8192DE/RTL8188DE support
-
-Package: kmod-rtl8192se
-Version: 5.10.221+5.15.162-1-1
-Depends: kernel (=5.10.221-1-76c55ea7faf6ba2bc954afca02eefbba), kmod-rtlwifi-pci, rtl8192se-firmware
-Section: kernel
-Architecture: mipsel_24kc
-Installed-Size: 31523
-Filename: kmod-rtl8192se_5.10.221+5.15.162-1-1_mipsel_24kc.ipk
-Size: 32252
-SHA256sum: ec41fe712ac277c118c1ec423e7f862055a4e697c8cfb2b15ac32f668c55cad8
-Description:  Realtek RTL8192SE/RTL8191SE support
-
-Package: kmod-rtl8723bs
-Version: 5.10.221+5.15.162-1-1
-Depends: kernel (=5.10.221-1-76c55ea7faf6ba2bc954afca02eefbba), kmod-mmc, kmod-mac80211
-Section: kernel
-Architecture: mipsel_24kc
-Installed-Size: 213910
-Filename: kmod-rtl8723bs_5.10.221+5.15.162-1-1_mipsel_24kc.ipk
-Size: 212483
-SHA256sum: 3ed00f926ce415fa43cea628caeecc1816ae16028854f5da47443445a036f397
-Description:  This option enables support for RTL8723BS SDIO drivers, such as the wifi found
- on the 1st gen Intel Compute Stick, the CHIP and many other Intel Atom and ARM
- based devices.
-
-Package: kmod-rtl8812au-ct
-Version: 5.10.221+2021-11-07-39df5596-1
-Depends: kernel (=5.10.221-1-76c55ea7faf6ba2bc954afca02eefbba), kmod-cfg80211, kmod-usb-core
-Provides: kmod-rtl8812au
-License: GPLv2
-Section: kernel
-Architecture: mipsel_24kc
-Installed-Size: 555014
-Filename: kmod-rtl8812au-ct_5.10.221+2021-11-07-39df5596-1_mipsel_24kc.ipk
-Size: 507480
-SHA256sum: 6ccaa88aedcff81038f3e0131bde17a1e20be7fdf08085509c9e4542c12ef847
-Description:  Driver for Realtek 8812 AU devices comfast 912-ac, etc
-
-Package: kmod-rtl8821ae
-Version: 5.10.221+5.15.162-1-1
-Depends: kernel (=5.10.221-1-76c55ea7faf6ba2bc954afca02eefbba), kmod-rtlwifi-btcoexist, kmod-rtlwifi-pci, rtl8821ae-firmware
-Section: kernel
-Architecture: mipsel_24kc
-Installed-Size: 77507
-Filename: kmod-rtl8821ae_5.10.221+5.15.162-1-1_mipsel_24kc.ipk
-Size: 67076
-SHA256sum: 94ccb461a2b3a283609a12bc4c810f77ef04d81a12b3f25dccde59fe068af8f6
-Description:  Realtek RTL8821AE support
-
-Package: kmod-rtl8xxxu
-Version: 5.10.221+5.15.162-1-1
-Depends: kernel (=5.10.221-1-76c55ea7faf6ba2bc954afca02eefbba), kmod-usb-core, kmod-mac80211
-Section: kernel
-Architecture: mipsel_24kc
-Installed-Size: 45456
-Filename: kmod-rtl8xxxu_5.10.221+5.15.162-1-1_mipsel_24kc.ipk
-Size: 46651
-SHA256sum: 56e818ec9cef889fc4ce134db9ffdc8a049236c67e2ca0d1aba0b7fd5dcba9c9
-Description:  This is an alternative driver for various Realtek RTL8XXX
- parts written to utilize the Linux mac80211 stack.
- The driver is known to work with a number of RTL8723AU,
- RL8188CU, RTL8188RU, RTL8191CU, and RTL8192CU devices
- 
- This driver is under development and has a limited feature
- set. In particular it does not yet support 40MHz channels
- and power management. However it should have a smaller
- memory footprint than the vendor drivers and benetifs
- from the in kernel mac80211 stack.
- 
- It can coexist with drivers from drivers/staging/rtl8723au,
- drivers/staging/rtl8192u, and drivers/net/wireless/rtlwifi,
- but you will need to control which module you wish to load.
- 
- RTL8XXXU_UNTESTED is enabled
- This option enables detection of Realtek 8723/8188/8191/8192 WiFi
- USB devices which have not been tested directly by the driver
- author or reported to be working by third parties.
- 
- Please report your results!
-
-Package: kmod-rtlwifi-btcoexist
-Version: 5.10.221+5.15.162-1-1
-Depends: kernel (=5.10.221-1-76c55ea7faf6ba2bc954afca02eefbba), kmod-rtlwifi
-Section: kernel
-Architecture: mipsel_24kc
-Installed-Size: 61012
-Filename: kmod-rtlwifi-btcoexist_5.10.221+5.15.162-1-1_mipsel_24kc.ipk
-Size: 61001
-SHA256sum: 59d3f1a6d8c926237a08571d72681561d53ffa20456f004174e3102e64217e93
-Description:  Realtek BT coexist support
-
-Package: kmod-rtlwifi-pci
-Version: 5.10.221+5.15.162-1-1
-Depends: kernel (=5.10.221-1-76c55ea7faf6ba2bc954afca02eefbba), kmod-rtlwifi
-Section: kernel
-Architecture: mipsel_24kc
-Installed-Size: 12517
-Filename: kmod-rtlwifi-pci_5.10.221+5.15.162-1-1_mipsel_24kc.ipk
-Size: 13321
-SHA256sum: 6fcb9e778dbe633021d3b4ad0799478751d42d8abb97852d5cff458f81572986
-Description:  Realtek common driver part (PCI support)
-
-Package: kmod-rtlwifi-usb
-Version: 5.10.221+5.15.162-1-1
-Depends: kernel (=5.10.221-1-76c55ea7faf6ba2bc954afca02eefbba), kmod-usb-core, kmod-rtlwifi
-Section: kernel
-Architecture: mipsel_24kc
-Installed-Size: 7547
-Filename: kmod-rtlwifi-usb_5.10.221+5.15.162-1-1_mipsel_24kc.ipk
-Size: 8354
-SHA256sum: 63ea238613a754ac44b77964aebe71eb60aa2bb927e829a530aceddbff5f7d47
-Description:  Realtek common driver part (USB support)
-
-Package: kmod-rtlwifi
-Version: 5.10.221+5.15.162-1-1
-Depends: kernel (=5.10.221-1-76c55ea7faf6ba2bc954afca02eefbba), kmod-mac80211
-Section: kernel
-Architecture: mipsel_24kc
-Installed-Size: 34677
-Filename: kmod-rtlwifi_5.10.221+5.15.162-1-1_mipsel_24kc.ipk
-Size: 35502
-SHA256sum: 95516fb020c2ec42ea92d07c38bd124d7bd3da077c99324afdcfb9689d39540d
-Description:  Realtek common driver part
-
-Package: kmod-rtw88
-Version: 5.10.221+5.15.162-1-1
-Depends: kernel (=5.10.221-1-76c55ea7faf6ba2bc954afca02eefbba), kmod-mac80211
-Section: kernel
-Architecture: mipsel_24kc
-Installed-Size: 186889
-Filename: kmod-rtw88_5.10.221+5.15.162-1-1_mipsel_24kc.ipk
-Size: 176189
-SHA256sum: 8aa337444fdd5da47842d4ffc6c666c16af9ae24a8ab2536c6b5062aa0101737
-Description:  Realtek RTL8822BE/RTL8822CE/RTL8723DE
 
 Package: kmod-rxrpc
 Version: 5.10.221-1
@@ -8355,19 +7421,6 @@ Filename: kmod-tg3_5.10.221-1_mipsel_24kc.ipk
 Size: 80412
 SHA256sum: 6eb3921cf0b6d3cb6e8d8643ad3db285980ab845e8a4a674fb7c38db75135ae6
 Description:  Kernel modules for Broadcom Tigon3 Gigabit Ethernet adapters
-
-Package: kmod-thermal
-Version: 5.10.221-1
-Depends: kernel (=5.10.221-1-76c55ea7faf6ba2bc954afca02eefbba), kmod-hwmon-core
-License: GPL-2.0
-Section: kernel
-Architecture: mipsel_24kc
-Installed-Size: 105
-Filename: kmod-thermal_5.10.221-1_mipsel_24kc.ipk
-Size: 920
-SHA256sum: 027520e7bb15722c02cd3368a17ac2696e9d4e3abc3719dc026bdb4a282fc4f9
-Description:  Thermal driver offers a generic mechanism for thermal management.
- Usually it's made up of one or more thermal zone and cooling device.
 
 Package: kmod-tpm-i2c-atmel
 Version: 5.10.221-1
@@ -9590,17 +8643,6 @@ Size: 872
 SHA256sum: 9719bf9c7c634e2e69fbc1a97e69d4766b8b431db405c24e3e3ea794371ad2b6
 Description:  Kernel module for Winbond 83627HF Watchdog Timer
 
-Package: kmod-wil6210
-Version: 5.10.221+5.15.162-1-1
-Depends: kernel (=5.10.221-1-76c55ea7faf6ba2bc954afca02eefbba), kmod-mac80211, wil6210-firmware
-Section: kernel
-Architecture: mipsel_24kc
-Installed-Size: 137413
-Filename: kmod-wil6210_5.10.221+5.15.162-1-1_mipsel_24kc.ipk
-Size: 136767
-SHA256sum: 363b5e83737744142abfeaf8f6c074641d187edbb8b961720a335bde653008d7
-Description:  QCA/Wilocity 60g WiFi card wil6210 support
-
 Package: kmod-wireguard
 Version: 5.10.221-1
 Depends: kernel (=5.10.221-1-1b9e756eaf092edeea8715428061cbf9), kmod-crypto-lib-chacha20poly1305, kmod-crypto-lib-curve25519, kmod-udptunnel4, kmod-udptunnel6
@@ -9618,50 +8660,6 @@ Description:  WireGuard is a novel VPN that runs inside the Linux Kernel and uti
  general purpose VPN for running on embedded interfaces and super computers
  alike, fit for many different circumstances. It uses UDP.
 
-Package: kmod-wl12xx
-Version: 5.10.221+5.15.162-1-1
-Depends: kernel (=5.10.221-1-76c55ea7faf6ba2bc954afca02eefbba), kmod-wlcore, wl12xx-firmware
-Section: kernel
-Architecture: mipsel_24kc
-Installed-Size: 19987
-Filename: kmod-wl12xx_5.10.221+5.15.162-1-1_mipsel_24kc.ipk
-Size: 20492
-SHA256sum: 9a68003f52f1ab2b20117bb2153964795b0cf3fb5b41912f8a1c928754c914df
-Description:  Kernel modules for TI WL12xx
-
-Package: kmod-wl18xx
-Version: 5.10.221+5.15.162-1-1
-Depends: kernel (=5.10.221-1-76c55ea7faf6ba2bc954afca02eefbba), kmod-wlcore, wl18xx-firmware
-Section: kernel
-Architecture: mipsel_24kc
-Installed-Size: 27570
-Filename: kmod-wl18xx_5.10.221+5.15.162-1-1_mipsel_24kc.ipk
-Size: 27768
-SHA256sum: 45e59d445f54edf65418b534b1efc809263aebff0ddf73c3250626be3200257d
-Description:  Kernel modules for TI WL18xx
-
-Package: kmod-wlcore
-Version: 5.10.221+5.15.162-1-1
-Depends: kernel (=5.10.221-1-76c55ea7faf6ba2bc954afca02eefbba), kmod-mmc, kmod-mac80211
-Section: kernel
-Architecture: mipsel_24kc
-Installed-Size: 89167
-Filename: kmod-wlcore_5.10.221+5.15.162-1-1_mipsel_24kc.ipk
-Size: 89475
-SHA256sum: d140602102245a04568e379fec374f4db3ec53634458253ff2403ae99142c7b5
-Description:  This module contains some common parts needed by TI Wireless drivers.
-
-Package: kmod-zd1211rw
-Version: 5.10.221+5.15.162-1-1
-Depends: kernel (=5.10.221-1-76c55ea7faf6ba2bc954afca02eefbba), kmod-usb-core, kmod-mac80211
-Section: kernel
-Architecture: mipsel_24kc
-Installed-Size: 39972
-Filename: kmod-zd1211rw_5.10.221+5.15.162-1-1_mipsel_24kc.ipk
-Size: 40699
-SHA256sum: ba1f9e2c2987e5cbb5333a68c3630d3e2af269d3de6076c527c5ba974b7bf7e5
-Description:  Zydas ZD1211 support
-
 Package: kmod-zram
 Version: 5.10.221-1
 Depends: kernel (=5.10.221-1-1b9e756eaf092edeea8715428061cbf9), kmod-lib-lzo
@@ -9673,22 +8671,6 @@ Filename: kmod-zram_5.10.221-1_mipsel_24kc.ipk
 Size: 20097
 SHA256sum: 66c6fff1c317bb412974c3e77e3da0854073a63e38254599525e9a217cd7261b
 Description:  Compressed RAM block device support
-
-Package: libatomic1
-Version: 11.2.0-4
-Depends: libgcc1
-Provides: libatomic
-License: GPL-3.0-with-GCC-exception
-Section: libs
-ABIVersion: 1
-Status: unknown hold not-installed
-Essential: yes
-Architecture: mipsel_24kc
-Installed-Size: 5507
-Filename: libatomic1_11.2.0-4_mipsel_24kc.ipk
-Size: 6300
-SHA256sum: e33eba164850a64b7099409ddb6a5a4a65b0eabac5c4383dcbec6f2ad1774f59
-Description:  Atomic support library
 
 Package: libgcc1
 Version: 11.2.0-4
