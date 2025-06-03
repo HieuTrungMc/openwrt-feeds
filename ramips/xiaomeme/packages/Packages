@@ -4794,17 +4794,6 @@ Size: 7602
 SHA256sum: d4d1e73896553475331f2d6b7dc6bb6e0d73b6b69004d232e1cd1e8e1ccf5853
 Description:  Parallel port line printer device support
 
-Package: kmod-mac80211
-Version: 5.10.221+5.15.162-1-1
-Depends: kernel (=5.10.221-1-c30634015cfe7c28c330164eec131cc8), kmod-cfg80211, kmod-crypto-cmac, kmod-crypto-ccm, kmod-crypto-gcm, hostapd-common
-Section: kernel
-Architecture: mipsel_24kc
-Installed-Size: 287005
-Filename: kmod-mac80211_5.10.221+5.15.162-1-1_mipsel_24kc.ipk
-Size: 286383
-SHA256sum: d5585a19aad58745e708afce6d9dd21146c9cde615109aaf5b02738856817928
-Description:  Generic IEEE 802.11 Networking Stack (mac80211)
-
 Package: kmod-mac802154
 Version: 5.10.221-1
 Depends: kernel (=5.10.221-1-1b9e756eaf092edeea8715428061cbf9), kmod-ieee802154, kmod-crypto-aead, kmod-lib-crc-ccitt
